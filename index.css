@@ -1,0 +1,258 @@
+#mapid{
+    height: 100vh;
+  }
+  
+  #container{
+    width: 100%;
+  }
+  
+  #map-wrapper{
+    position: relative;
+    float: right;
+    width: 100%;
+  }
+  
+  #key-desktop {
+    padding: 5px;
+  }
+  
+  #key-wrapper div {
+    float: left;
+  }
+  
+  .key-label {
+    display: inline-block;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    color: #D6D6D6;
+  }
+  
+  .key-label p {
+    font-size: 13px;
+  }
+  
+  .key-image {
+    width: 194px;
+  }
+  
+  h3 {
+    font-family: PT Sans, Arial;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #D0CFD4;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+  #key-title {
+    border-top: 1px solid;
+    border-top-color: #D6D6D6;
+    padding-top: 5px;
+    margin-top: 0px;
+  }
+  
+  body {
+      margin: 0;
+  }
+  
+  p {
+      font-family: PT Sans, Arial;
+    font-size: 14px;
+  }
+  
+  #side-bar {
+    display: inline-block;
+    position: absolute;
+      height: 100vh;
+      width: 26%;
+      z-index: 314159;
+    /* background-color: rgba(51,51,51, 0.86); */
+    opacity: 50%;
+    padding-right: 20px;
+  }
+  
+  #side-bar-toggle {
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    position: absolute;
+    z-index: 99999999;
+    width: 12px;
+    height: 12px;
+    display: block;
+  }
+  
+  
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(https://s3-eu-west-1.amazonaws.com/cbbranding/new+folder/arrow-for-map.png) 96% / 15% no-repeat #ffffff;
+    background-size: 20px 13px;
+    border:0px;
+    outline:0px;
+    width: 190px;
+    height: 40px;
+    font-family: "PT Sans", Arial; 
+    font-size: 14.5px; 
+    font-weight:bold;
+    padding:6px; 
+    padding-left: 11px; 
+    -webkit-box-shadow: 6px 10px 23px 5px rgba(102,102,102,0.2);
+    -moz-box-shadow: 6px 10px 23px 5px rgba(102,102,102,0.2);
+    box-shadow: 6px 10px 23px 5px rgba(102,102,102,0.2);
+  }
+  
+  
+  div.selector-menu {
+    position: absolute;
+    top: 10px;
+    z-index: 9000;
+    box-shadow: none;
+    border: 0px;
+    outline: 0px;
+    border-radius: 5px;
+    opacity: .85;
+  }
+  
+  #selector_menu_1 {
+    left: calc(100% + 10px);
+  }
+  
+  #selector_menu_2 {
+    left: calc(100% + 210px);
+  }
+  
+  #selector_menu_3 {
+    left: calc(100% + 410px);
+  }
+  
+  div.selector-menu option {
+    padding: 15px 30px;
+    font-family: "PT Sans", Arial;
+    font-size: 15px;
+    color: #000000;
+    cursor: auto;
+    border:0px;
+    outline:0px;
+  }
+  div.selector-menu option:hover {
+    cursor: pointer;
+  }
+  div.selector-menu option.selected {
+    font-family: "PT Sans", Arial;
+  }
+  
+  #title-wrapper {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  #title {
+    font-family: PT Sans Narrow, Arial;
+    padding: 0px;
+    color: #D0CFD4;
+    margin-top: 0px;
+    /* border-bottom: 1px solid;
+    border-bottom-color: #ffffff; */
+    font-size: 36px;
+  }
+  
+  #subtitle-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  #subtitle {
+    font-family: PT Sans Narrow, Arial;
+    font-style: bold;
+    color: #D0CFD4;
+    margin: 0;
+    font-size: 26px;
+  }
+  
+  #subtitle-wrapper p {
+    color: #f3f3f3;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .total {
+    color: #2cb0c1;
+  }
+  
+  #total {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  #total-label {
+    font-size: 10px;
+  }
+  
+  h1 {
+      font-family: PT Sans Narrow, Arial;
+      font-weight: normal;
+    font-size: 18px;
+      margin-bottom: 0;
+  }
+  
+  /* D3样式 */
+  
+  #chart-1 {
+    height: auto;
+    width: 100%;
+  }
+  
+  #chart-2 {
+    height: auto;
+    width: 100%;
+  }
+  
+  .bar {
+    opacity: 1;
+    stroke: #ADADAD;
+    stroke-width: 0.4px;
+  }
+  
+  .bar:hover {
+    opacity: .7;
+  }
+   
+  .axis text {
+    font: 13px PT Sans;
+    fill: #D6D6D6;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #ADADAD;
+    shape-rendering: crispEdges;
+  }
+  
+  .tooltip{
+    position: absolute;	
+    text-align: left;	
+    width: auto;
+    max-width: 240px;	
+    height: auto;		
+    padding: 10px;	
+    font: 12px PT Sans;	
+    background: white;	
+    border: 0px;					
+    border-radius: 8px;
+    pointer-events: none;
+  }
+  
+  #yaxisChart2 > g > text{
+    visibility: hidden;
+  }
+  

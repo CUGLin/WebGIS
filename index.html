@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>贫困县</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSS/country.css">
+    <link rel="stylesheet" href="CSS/leaflet.css">
+    <link rel="stylesheet" href="CSS/MarkerCluster.css">
+    <link rel="stylesheet" href="CSS/MarkerCluster.Default.css">
+
+    <script src="JS/leaflet.js"></script>
+    <script src="JS/leaflet.ChineseTmsProviders.js"></script>
+    <script src="JS/jquery-3.7.1.js"></script>
+    <script src="JS/leaflet.markercluster-src.js"></script>
+    <script src="JS/papaparse.js"></script>
+    <script src="JS/turf.min.js"></script>
+    <script src="JS/d3.js"></script>
+    <script src="JS/leaflet.ajax.js"></script>
+    <script src="Data/贫困县情况.js"></script>
+    <script src="Data/安徽省贫困县.js"></script>
+  </head>
+
+  
+  <body>
+    <div id="container">
+      <div id="side-bar">
+        <div id="links-container">
+          <div class="selector-menu" id="selector_menu_1">
+            <select id="selector1">
+              <option value="全国" selected>全国</option>
+              <option value="安徽省" selected>安徽省</option>
+            </select>
+          </div>
+          <div class="selector-menu" id="selector_menu_2">
+            <select id="selector2">
+              <option value="Years" selected>2015年</option>
+
+              <option value="2016">2016年</option>
+              <option value="2017">2017年</option>
+              <option value="2018">2018年</option>
+              <option value="2019">2019年</option>
+              <option value="2020">2020年</option>
+            </select>
+          </div>
+          <div class="selector-menu" id="selector_menu_3">
+            <select id="selector3">
+              <option value="NASAGIBS_ViirsEarthAtNight2012">Satellite image night</option>
+              <option value="TianDiTu_Normal">TianDitu Normal Map</option>
+              <option value="TianDiTu_Satellite">TianDitu Satellite Day</option>
+              <option value="Google_Normal">Google Normal Map</option>
+              <option value="Google_Staellite">Google Satellite Day</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="map-wrapper">
+        <div id="mapid"></div>
+      </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>
